@@ -30,6 +30,7 @@ export const TableWrapper = ({className, currentWords}: iProps) => {
         {currentWords && currentWords.map((word: iWord) => (
           <TableRow key={word.id} className={clsx(
             word.engLearned && 'bg-green-400',
+            word.rusLearned && 'bg-green-400'
           )}>
             <TableCell>{word.id}</TableCell>
             <TableCell>{word.eng_name}</TableCell>

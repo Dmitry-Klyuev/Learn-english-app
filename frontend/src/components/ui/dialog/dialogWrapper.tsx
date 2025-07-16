@@ -72,7 +72,7 @@ export const DialogWrapper = ({className, currentWords}: IProps) => {
           <DialogTrigger asChild>
             <Button>Учить русские слова</Button>
           </DialogTrigger>
-          <DialogContent className="w-3xl" showCloseButton={true}>
+          <DialogContent className="w-3xl" showCloseButton={false}>
             <DialogTitle>Учить русские слова</DialogTitle>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <Table>
