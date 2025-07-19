@@ -34,7 +34,7 @@ export const fetchWords = createAsyncThunk(
   'words/fetchWords',
   async (id: number) => {
     try {
-      const res = await axios.get(`http://localhost:9000/api/${id}`)
+      const res = await axios.get(`https://localhost:3010/api/${id}`)
       return await res.data;
     } catch (e) {
       console.log(e)
@@ -45,7 +45,7 @@ export const countPage = createAsyncThunk(
   'words/countPage',
   async () => {
     try {
-      const res = await axios.get('http://localhost:9000/api/count')
+      const res = await axios.get('https://localhost:3010/api/count')
       return await res.data[0];
     } catch (e) {
       console.log(e)
